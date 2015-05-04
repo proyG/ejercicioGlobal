@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       <h:form>         
+            <p:layout fullPage="true"> 
+                    <p:layoutUnit position="center">                         
+                        <p:megaMenu style="margin-top:20px" rendered="true">
+                            <p:submenu label="Administracion" icon="ui-icon-check">                                       
+                                <p:column>
+                                    <p:submenu label="Configuracion">
+                                        <p:menuitem value="Cambiar Contraseña" url="password.xhtml" />
+                                        <p:menuitem value="Salir" url="https://www.google.com" />
+                                    </p:submenu>  
+                                </p:column>                            
+                            </p:submenu>
+                            <p:submenu label="Gestion Clientes" icon="ui-icon-document">
+                                <p:column>
+                                    <p:submenu label="Clientes">
+                                        <p:menuitem value="Adicionar" url="adicionar.xhtml" />                          
+                                        <p:menuitem value="Modificar" url="modificar.xhtml" />                        
+                                        <p:menuitem value="Consultar" url="consultar.xhtml" />                        
+                                        <p:menuitem value="Eliminar" url="eliminar.xhtml" />                        
+                                    </p:submenu>                               
+                                </p:column>     
+                            </p:submenu>        
+                            <p:submenu label="Gestion Proveedores" icon="ui-icon-document">
+                                <p:column>                                
+                                    <p:submenu label="Proveedores">
+                                        <p:menuitem value="Adicionar" url="adicionar.xhtml" />                        
+                                        <p:menuitem value="Modificar" url="modificar.xhtml" />                        
+                                        <p:menuitem value="Consultar" url="consultar.xhtml" />                        
+                                        <p:menuitem value="Eliminar" url="eliminar.xhtml" />                        
+                                    </p:submenu>
+                                </p:column>     
+                            </p:submenu>
+                        </p:megaMenu>                    
+                    </p:layoutUnit>
+                </p:layout>
+        </h:form>
+    </h:body>
+</html>
+</ui:composition>
+

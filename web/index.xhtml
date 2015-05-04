@@ -6,6 +6,17 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
+        <script type="text/javascript">
+            function handleLoginRequest(xhr, status, args) {
+                if(args.validationFailed || !args.loggedIn) {
+                    PF('dlg').jq.effect("shake", {times:5}, 100);
+                }
+                else {
+                    PF('dlg').hide();
+                    $('#loginLink').fadeOut();
+                }
+            }
+        </script>
     </h:head>
     <h:body>
         <h:form>            
@@ -24,24 +35,12 @@
                     </f:facet> 
                 </h:panelGrid>
                 
-                <p:separator/>
-                <h:outputLink>
-                        Registrate                
-                </h:outputLink>
-            </p:confirmDialog>
-</h:form>
- 
-<script type="text/javascript">
-    function handleLoginRequest(xhr, status, args) {
-        if(args.validationFailed || !args.loggedIn) {
-            PF('dlg').jq.effect("shake", {times:5}, 100);
-        }
-        else {
-            PF('dlg').hide();
-            $('#loginLink').fadeOut();
-        }
-    }
-</script>
+                <p:separator/>                 
+                <p:link outcome="resgistroUsuario" value="Registrate">               
+                </p:link>
+            </p:confirmDialog>           
+        </h:form>         
+        
         
     </h:body>
 </html>
