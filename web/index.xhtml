@@ -11,7 +11,7 @@
         <h:form>            
             <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
                        
-            <p:confirmDialog header="Login" widgetVar="dlg" visible="true" closable="false" showEffect="fade" hideEffect="explode"  >
+            <p:confirmDialog message="inicie sesion para acceder al sistema" header="Login" widgetVar="dlg" visible="true" closable="false" showEffect="fade" hideEffect="explode"  >
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputLabel for="username" value="Username:" />
                     <p:inputText id="username" value="#{userLoginView.username}" required="true" label="username" />
