@@ -10,10 +10,6 @@
     <h:body>
         <h:form>            
             <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
-           
-            <p:commandButton value="Destroy the World" actionListener="#{dialogView.destroyWorld}">
-                <p:confirm header="Confirmation" message="Are you sure?" icon="ui-icon-alert" />
-            </p:commandButton>
                        
             <p:confirmDialog header="Login" widgetVar="dlg" visible="true" closable="false" showEffect="fade" hideEffect="explode"  >
                 <h:panelGrid columns="2" cellpadding="5">
