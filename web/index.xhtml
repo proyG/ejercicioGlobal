@@ -21,15 +21,15 @@
     </h:head>
     <h:body>
         <h:form>            
-            <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
+            <p:growl id="growl" sticky="true" life="3000" />
                        
             <p:confirmDialog message="inicie sesion para acceder al sistema" header="Login" widgetVar="dlg" visible="true" closable="false" showEffect="fade" hideEffect="explode"  >
                 <h:panelGrid columns="2" cellpadding="5">
-                    <h:outputLabel for="username" value="Username:" />
-                    <p:inputText id="username" value="#{userLoginView.username}" required="true" label="username" />
+                    <h:outputLabel for="usuario" value="Usuario" />
+                    <p:inputText id="usuario" value="#{userLoginView.username}" required="true" label="Usuario" />
 
-                    <h:outputLabel for="password" value="Password:" />
-                    <p:password id="password" value="#{userLoginView.password}" required="true" label="password" />
+                    <h:outputLabel for="contraseña" value="Contraseña: " />
+                    <p:password id="contraseña" value="#{userLoginView.password}" required="true" label="Contraseña" />
                     <f:facet name="footer">
                         <p:commandButton value="Login" update="growl" actionListener="#{userLoginView.login}"
                                          oncomplete="handleLoginRequest(xhr, status, args)" />

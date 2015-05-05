@@ -37,7 +37,7 @@ public class UserLoginView {
          
         if(username != null && username.equals("admin") && password != null && password.equals("admin")) {
             loggedIn = true;
-            message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Bienvenido a iniciado sesion corectamente: ", username);
+            message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Bienvenido a iniciado sesion corectamente: "+ username, username);
         } else {
             loggedIn = false;
             message = new FacesMessage(FacesMessage.SEVERITY_WARN, "Error al iniciar sesion", "usuario y contraseña invalidos");
