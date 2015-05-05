@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
@@ -8,44 +8,104 @@
     <h:head>
         <title>Facelet Title</title>
     </h:head>
-    <h:body>
-       <h:form>         
-            <p:layout fullPage="true"> 
-                    <p:layoutUnit position="center">                         
-                        <p:megaMenu style="margin-top:20px" rendered="true">
-                            <p:submenu label="Administracion" icon="ui-icon-check">                                       
-                                <p:column>
-                                    <p:submenu label="Configuracion">
-                                        <p:menuitem value="Cambiar Contraseña" url="password.xhtml" />
-                                        <p:menuitem value="Salir" url="https://www.google.com" />
-                                    </p:submenu>  
-                                </p:column>                            
-                            </p:submenu>
-                            <p:submenu label="Gestion Clientes" icon="ui-icon-document">
-                                <p:column>
-                                    <p:submenu label="Clientes">
-                                        <p:menuitem value="Adicionar" url="adicionar.xhtml" />                          
-                                        <p:menuitem value="Modificar" url="modificar.xhtml" />                        
-                                        <p:menuitem value="Consultar" url="consultar.xhtml" />                        
-                                        <p:menuitem value="Eliminar" url="eliminar.xhtml" />                        
-                                    </p:submenu>                               
-                                </p:column>     
-                            </p:submenu>        
-                            <p:submenu label="Gestion Proveedores" icon="ui-icon-document">
-                                <p:column>                                
-                                    <p:submenu label="Proveedores">
-                                        <p:menuitem value="Adicionar" url="adicionar.xhtml" />                        
-                                        <p:menuitem value="Modificar" url="modificar.xhtml" />                        
-                                        <p:menuitem value="Consultar" url="consultar.xhtml" />                        
-                                        <p:menuitem value="Eliminar" url="eliminar.xhtml" />                        
-                                    </p:submenu>
-                                </p:column>     
-                            </p:submenu>
-                        </p:megaMenu>                    
-                    </p:layoutUnit>
-                </p:layout>
-        </h:form>
+    <h:body>        
+        <h:form>
+            <p:megaMenu style="margin-top:20px">
+                <p:submenu label="TV" icon="ui-icon-check">
+                    <p:column>
+                        <p:submenu label="TV.1">
+                            <p:menuitem value="prueba" url="prueba.xhtml" />
+                            <p:menuitem value="prueba2" url="prueba2.xhtml" />
+                        </p:submenu>
+                        <p:submenu label="TV.2">
+                            <p:menuitem value="TV.2.1" url="#" />
+                            <p:menuitem value="TV.2.2" url="#" />
+                            <p:menuitem value="TV.2.3" url="#" />
+                        </p:submenu>
+                    </p:column>
+
+                    <p:column>
+                        <p:submenu label="TV.4">
+                            <p:menuitem value="TV.4.1" url="#" />
+                            <p:menuitem value="TV.4.2" url="#" />
+                        </p:submenu>
+                        <p:submenu label="TV.5">
+                            <p:menuitem value="TV.5.1" url="#" />
+                            <p:menuitem value="TV.5.2" url="#" />
+                            <p:menuitem value="TV.5.3" url="#" />
+                        </p:submenu>
+                    </p:column>
+
+                    <p:column>
+                        <strong>Image</strong>
+                        <p:graphicImage name="/demo/images/nature/nature1.jpg" width="200"/>
+                    </p:column>
+                </p:submenu>
+
+                <p:submenu label="Sports" icon="ui-icon-document">
+
+                    <p:column>
+                        <p:submenu label="Sports.1">
+                            <p:menuitem value="Sports.1.1" url="#" />
+                            <p:menuitem value="Sports.1.2" url="#" />
+                        </p:submenu>
+                        <p:submenu label="Sports.2">
+                            <p:menuitem value="Sports.2.1" url="#" />
+                            <p:menuitem value="Sports.2.2" url="#" />
+                            <p:menuitem value="Sports.2.3" url="#" />
+                        </p:submenu>
+                    </p:column>
+
+                    <p:column>
+                        <p:submenu label="Sports.4">
+                            <p:menuitem value="Sports.4.1" url="#" />
+                            <p:menuitem value="Sports.4.2" url="#" />
+                        </p:submenu>
+                        <p:submenu label="Sports.5">
+                            <p:menuitem value="Sports.5.1" url="#" />
+                            <p:menuitem value="Sports.5.2" url="#" />
+                            <p:menuitem value="Sports.5.3" url="#" />
+                        </p:submenu>
+                    </p:column>
+                    <p:column>
+                        <p:submenu label="Sports.7">
+                            <p:menuitem value="Sports.7.1" url="#" />
+                            <p:menuitem value="Sports.7.2" url="#" />
+                        </p:submenu>
+                    </p:column>
+                </p:submenu>
+
+                <p:submenu label="Entertainment" icon="ui-icon-pencil">
+                    <p:column>
+                        <p:submenu label="Entertainment.1">
+                            <p:menuitem value="Entertainment.1.1" url="#" />
+                            <p:menuitem value="Entertainment.1.2" url="#" />
+                        </p:submenu>
+                        <p:submenu label="Entertainment.2">
+                            <p:menuitem value="Entertainment.2.1" url="#" />
+                            <p:menuitem value="Entertainment.2.2" url="#" />
+                            <p:menuitem value="Entertainment.2.3" url="#" />
+                        </p:submenu>
+                    </p:column>
+
+                    <p:column>
+                        <p:submenu label="Entertainment.4" icon="ui-icon-help">
+                            <p:menuitem value="Entertainment.4.1" url="#" />
+                            <p:menuitem value="Entertainment.4.2" url="#" />
+                        </p:submenu>
+                        <p:submenu label="Entertainment.5">
+                            <p:menuitem value="Entertainment.5.1" url="#" />
+                            <p:menuitem value="Entertainment.5.2" url="#" />
+                            <p:menuitem value="Entertainment.5.3" url="#" />
+                        </p:submenu>
+                    </p:column>
+                </p:submenu>               
+ 
+    <p:menuitem value="Quit" url="http://www.primefaces.org" icon="ui-icon-close" />
+</p:megaMenu>
+        </h:form>      
+            
     </h:body>
 </html>
-</ui:composition>
+
 
